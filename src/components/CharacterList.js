@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import Header from './Header.js';
 //import CharacterCard from './CharacterCard.js';
 import {Card, CardImg, CardTitle, CardBody, CardSubtitle} from 'reactstrap';
 
@@ -11,7 +12,7 @@ export default function CharacterList() {
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-    axios.get('https://rickandmortyapi.com/api/character/')
+    axios.get('https://rick-api.herokuapp.com/api/')
       .then(function(response){
         //console.log("Successful response:", response.data.results);
         setCharacters(response.data.results);
@@ -24,6 +25,7 @@ export default function CharacterList() {
 
   return (
       <section>
+        <Header />
         {characters.map(function(character, index){
           return(
             <Card key={index}>
