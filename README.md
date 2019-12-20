@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: The benefits of client-side routing revolve around UI. It is necessary for single page applications. Single page applications do not refresh because they get all the needed info from the server initially. Leveraging react's virtual DOM, the page re-renders components as instructed but without a refresh.
 
 ## Project Set Up
 
