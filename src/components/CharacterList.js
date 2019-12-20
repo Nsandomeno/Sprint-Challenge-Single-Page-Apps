@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import Header from './Header.js';
+import SearchForm from './SearchForm.js';
 //import CharacterCard from './CharacterCard.js';
 import {Card, CardImg, CardTitle, CardBody, CardSubtitle} from 'reactstrap';
 
